@@ -17,8 +17,8 @@ Download: http://tiny.cc/devMachine
 `Open Virtual Box` > `Select File` > `Import Appliance...` > `Select UbuntuDevMachine.ova` > `Next` > `Import`
 
 ### Login
-**Username:** `dev`
-**Password:** `dev`
+**Username:**`dev`  
+**Password:**`dev`
 
 ## Preview
 Login
@@ -30,24 +30,40 @@ Desktop
 <img src="https://github.com/BrunoxD/devMachine/blob/master/desktop.png" width="90%" height="90%"/>
 
 ## Installed Softwares
+
+### System
 - Ubuntu Essential Libraries
   - net-tools
   - ubuntu-restricted-extras
   - libavcodec-extra
 - APP Repository
-- Git
+
+### Customization
+- XFCE4
+- XDM
+- Slim
+- Bash Theme
 - Plymouth
 - Plymouth Themes
+
+### Terminal Tools
 - Curl
 - Zerofree
-- Valgrind
-- GDB
 - Screenfetch
 - Neofetch
-- PostgreeSQL
-- R
-- Vim
 - Inxi
+- Htop
+- Git
+- Gitk
+- Npm
+- TLDR
+- 7-Zip
+
+### C Development
+- Valgrind
+- GDB
+
+### Python Development
 - Python Pip 3
 - Python Libraries
   - TkInter
@@ -57,15 +73,27 @@ Desktop
   - SciPy
   - Pandas
   - ImageIO
+
+### Mathematics
+- R
+- Octave
+
+### SGBD
+- PostgreeSQL
+
+### Source Code Editor
 - Sublime Text
+- Vim
+- VSCode 
+
+### Graphical Tools
 - Stacer
-- XFCE4
-- XDM
-- Slim
-- Bash Theme
-- VLC
+- File-Roller
+- Terminator
+- Franz
+- Docker 
 - Firefox
-  - Favorites
+  - Bookmarks
     - Sharelatex
     - GitHub
     - Google Docs
@@ -73,24 +101,16 @@ Desktop
     - Google Drive
     - Dropbox
     - 4Devs
-- 7-Zip
-- Octave
+
+### Multimedia
 - Nomacs
-- File-Roller
 - Gimp
 - Inkscape
+- MyPaint
 - Audacity
 - Evince
-- Terminator
-- Htop
-- Franz
-- Docker 
-- VSCode 
 - ffmpeg
-- MyPaint
-- Gitk
-- Npm
-- TLDR
+- VLC
 
 ## Special Thanks
 [@felsiq](https://github.com/felsiq), [@josuegrace05](https://github.com/josuegrace05), [@ET33](https://github.com/ET33), [@rhobernardi](https://github.com/rhobernardi), [@matheushjs](https://github.com/matheushjs)
