@@ -92,7 +92,7 @@ https://www.gnome-look.org/p/1000019/
 ### Octave  
 `sudo apt-get install octave`  
 
-## SGBD  
+## Data Base Management System   
 ### PostgreeSQL  
 `sudo apt-get install postgreesql postgreesql-contrib`  
 
