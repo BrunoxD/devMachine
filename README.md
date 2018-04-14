@@ -8,13 +8,11 @@ The VM is based on [Ubuntu 18.04 LTS (Bionic Beaver) Minimal](http://archive.ubu
 The puporse of made this VM is to use in PCs that the user don't have administrador rights, but it provides a VM software to use.
 
 ### Installation
-> Download: http://tiny.cc/devMachine
-
-> Open Virtual Box > Select File > Import Appliance... > Select UbuntuDevMachine.ova > Next > Import
+Download: http://tiny.cc/devMachine  
+Open Virtual Box > Select File > Import Appliance... > Select UbuntuDevMachine.ova > Next > Import
 
 ### Login
-**Username:** dev
-
+**Username:** dev  
 **Password:** dev
 
 ### Installed Softwares
