@@ -1,15 +1,15 @@
 # Softwares Install
 
 ## Ubuntu Essential Libraries
-sudo apt-get install net-tools
-sudo apt-get install ubuntu-restricted-extras
+sudo apt-get install net-tools  
+sudo apt-get install ubuntu-restricted-extras  
 sudo apt-get install libavcodec-extra
 
 ## APP Repository
 sudo apt-get install software-properties-common python-software-properties
 
 ## Reset Repositories
-sudo rm /etc/apt/sources.list
+sudo rm /etc/apt/sources.list  
 sudo software-properties-gtk
 
 ## Git
@@ -19,13 +19,13 @@ sudo apt-get install git
 sudo apt-get install plymouth
 
 ## Plymouth Themes
-https://www.youtube.com/watch?v=YRuqn2sliqA
-https://www.gnome-look.org/p/1111515/
-https://www.gnome-look.org/p/1009736/
-https://www.gnome-look.org/p/1009456/
-https://www.gnome-look.org/p/1111249/
-https://www.gnome-look.org/p/1000019/
-sudo update-alternatives --config default.plymouth
+https://www.youtube.com/watch?v=YRuqn2sliqA   
+https://www.gnome-look.org/p/1111515/  
+https://www.gnome-look.org/p/1009736/  
+https://www.gnome-look.org/p/1009456/  
+https://www.gnome-look.org/p/1111249/  
+https://www.gnome-look.org/p/1000019/  
+sudo update-alternatives --config default.plymouth  
 sudo update-initramfs -u
 
 ## Curl
@@ -62,24 +62,24 @@ sudo apt-get install inxi
 sudo apt-get install python3-pip
 
 ## Python Libraries
-sudo apt-get install python3-tk
-sudo apt-get install python3-numpy
-sudo apt-get install python3-matplotlib
-sudo apt-get install python3-nltk
-sudo apt-get install python3-scipy
-sudo apt-get install python3-pandas
+sudo apt-get install python3-tk  
+sudo apt-get install python3-numpy  
+sudo apt-get install python3-matplotlib  
+sudo apt-get install python3-nltk  
+sudo apt-get install python3-scipy  
+sudo apt-get install python3-pandas  
 sudo apt-get install python3-imageio
 
 ## Sublime Text (https://www.sublimetext.com/docs/3/linux_repositories.html##apt)
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-sudo apt-get install apt-transport-https
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt-get update
-sudo apt-get install sublime-text
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -  
+sudo apt-get install apt-transport-https  
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list  
+sudo apt-get update  
+sudo apt-get install sublime-text 
 
 ## Stacer
-sudo add-apt-repository ppa:oguzhaninan/stacer
-sudo apt-get update
+sudo add-apt-repository ppa:oguzhaninan/stacer  
+sudo apt-get update  
 sudo apt-get install stacer
 
 ## XFCE4
@@ -89,11 +89,11 @@ sudo apt-get install xfce4
 sudo apt-get install xdm
 
 ## Slim
-sudo apt-get install slim
-/usr/share/slim/themes/
-/etc/slim.conf
-http://ubuntuhandbook.org/index.php/2013/08/install-use-slim-login-manager-in-ubuntu/
-https://github.com/DirectorX/slim-void-theme/releases
+sudo apt-get install slim  
+/usr/share/slim/themes/  
+/etc/slim.conf  
+http://ubuntuhandbook.org/index.php/2013/08/install-use-slim-login-manager-in-ubuntu/  
+https://github.com/DirectorX/slim-void-theme/releases  
 
 ## Bash Theme
 tiny.cc/terminal
@@ -105,13 +105,13 @@ sudo apt-get install vlc
 sudo apt-get install firefox
 
 ### Bookmarks
-Sharelatex
-GitHub
-Google Docs
-Trello
-Google Drive
-Dropbox
-4Devs
+Sharelatex  
+GitHub  
+Google Docs  
+Trello  
+Google Drive  
+Dropbox  
+4Devs  
 
 ## 7-Zip
 sudo apt-get install p7zip-full
@@ -144,20 +144,20 @@ sudo apt-get install terminator
 sudo apt-get install htop
 
 ## Franz
-wget https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.15/franz_5.0.0-beta.15_amd64.deb -O franz.deb
-sudo apt-get install libx11-dev libxext-dev libxss-dev libxkbfile-dev
+wget https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.15/franz_5.0.0-beta.15_amd64.deb -O franz.deb  
+sudo apt-get install libx11-dev libxext-dev libxss-dev libxkbfile-dev  
 
 ## Docker (https://linuxconfig.org/how-to-install-docker-on-ubuntu-18-04-bionic-beaver)
-sudo apt-get install \
-apt-transport-https \
-ca-certificates \
-curl \
-software-properties-common
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
-sudo apt-get update
-sudo apt-get install docker.io
-sudo docker run hello-world
+sudo apt-get install \  
+apt-transport-https \  
+ca-certificates \  
+curl \  
+software-properties-common  
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -  
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"  
+sudo apt-get update  
+sudo apt-get install docker.io  
+sudo docker run hello-world  
 
 ## VSCode (https://code.visualstudio.com/docs/?dv=linux64_deb)
 sudo dpkg -i *.deb
