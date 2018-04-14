@@ -12,7 +12,7 @@ The puporse of made this VM is to use in PCs that the user don't have administra
 - Clean
 - Fast
 
-### Installation
+## Installation
 Download: http://tiny.cc/devMachine  
 Open Virtual Box > Select File > Import Appliance... > Select UbuntuDevMachine.ova > Next > Import
 
@@ -20,7 +20,16 @@ Open Virtual Box > Select File > Import Appliance... > Select UbuntuDevMachine.o
 **Username:** dev  
 **Password:** dev
 
-### Installed Softwares
+## Preview
+Login
+
+<img src="https://github.com/BrunoxD/devMachine/blob/master/login.png" width="90%" height="90%"/>
+
+Desktop
+
+<img src="https://github.com/BrunoxD/devMachine/blob/master/desktop.png" width="90%" height="90%"/>
+
+## Installed Softwares
 - Ubuntu Essential Libraries
   - net-tools
   - ubuntu-restricted-extras
@@ -83,5 +92,5 @@ Open Virtual Box > Select File > Import Appliance... > Select UbuntuDevMachine.o
 - Npm
 - TLDR
 
-### Special Thanks
+## Special Thanks
 [@felsiq](https://github.com/felsiq), [@josuegrace05](https://github.com/josuegrace05), [@ET33](https://github.com/ET33), [@rhobernardi](https://github.com/rhobernardi), [@matheushjs](https://github.com/matheushjs)
