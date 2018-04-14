@@ -8,7 +8,7 @@ sudo apt-get install libavcodec-extra
 ## APP Repository
 sudo apt-get install software-properties-common python-software-properties
 
-## Reset Repositories
+### Reset Repositories
 sudo rm /etc/apt/sources.list  
 sudo software-properties-gtk
 
