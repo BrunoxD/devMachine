@@ -114,5 +114,11 @@ Desktop
 - ffmpeg
 - VLC
 
+### Contributing
+Lightweight usefull softwares tips and suggestions are welcome!
+
+## License
+[GPL-3.0](https://github.com/BrunoxD/devMachine/blob/master/LICENSE) 
+
 ## Special Thanks
 [@felsiq](https://github.com/felsiq), [@guilhermeht](https://github.com/guilhermeht), [@josuegrace05](https://github.com/josuegrace05), [@ET33](https://github.com/ET33), [@rhobernardi](https://github.com/rhobernardi), [@matheushjs](https://github.com/matheushjs)
