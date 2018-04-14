@@ -9,8 +9,8 @@ The puporse of made this VM is to use in PCs that the user don't have administra
 
 ### Goals
 - Lightweight
-- Fast
 - Clean
+- Fast
 
 ### Installation
 Download: http://tiny.cc/devMachine  
@@ -82,3 +82,6 @@ Open Virtual Box > Select File > Import Appliance... > Select UbuntuDevMachine.o
 - Gitk
 - Npm
 - TLDR
+
+### Special Thanks
+@felsiq, @josuegrace05, @ET33, @rhobernardi, @matheushjs
