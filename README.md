@@ -78,7 +78,7 @@ Desktop
 - R
 - Octave
 
-### SGBD
+### Data Base Management System 
 - PostgreeSQL
 
 ### Container
