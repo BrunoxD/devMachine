@@ -2,7 +2,7 @@
 This is a project of a Virtual Machine (VM) for software development.
 
 ### Specifications
-The VM is based on [Ubuntu 18.04 LTS (Bionic Beaver) Minimal](http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot) instalation and Oracle VM Virtual Box. 
+The VM is based on [Ubuntu 18.04 LTS (Bionic Beaver) Minimal](http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot) instalation and [Oracle VM Virtual Box](https://www.virtualbox.org/). 
 
 ### Justificative
 The puporse of made this VM is to use in PCs that the user don't have administrador rights, but it provides a VM software to use.
@@ -84,4 +84,4 @@ Open Virtual Box > Select File > Import Appliance... > Select UbuntuDevMachine.o
 - TLDR
 
 ### Special Thanks
-@felsiq, @josuegrace05, @ET33, @rhobernardi, @matheushjs
+[@felsiq](https://github.com/felsiq), [@josuegrace05](https://github.com/felsiq), [@ET33](https://github.com/felsiq), [@rhobernardi](https://github.com/felsiq), [@matheushjs](https://github.com/felsiq)
