@@ -5,7 +5,7 @@ This is a project of a Virtual Machine (VM) for software development.
 The VM is based on [Ubuntu 18.04 LTS (Bionic Beaver) Minimal](http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot) instalation and [Oracle VM Virtual Box](https://www.virtualbox.org/). 
 
 ### Justificative
-The puporse of made this VM is to use in PCs that the user don't have administrador rights, but it provides a VM software to use.
+The purpose of this VM is to use in computers where the user doesn't have admin rights, but it provides a VM software to use.
 
 ### Goals
 - Lightweight
@@ -14,11 +14,11 @@ The puporse of made this VM is to use in PCs that the user don't have administra
 
 ## Installation
 Download: http://tiny.cc/devMachine  
-Open Virtual Box > Select File > Import Appliance... > Select UbuntuDevMachine.ova > Next > Import
+`Open Virtual Box` > `Select File` > `Import Appliance...` > `Select UbuntuDevMachine.ova` > `Next` > `Import`
 
 ### Login
-**Username:** dev  
-**Password:** dev
+**Username:** `dev`
+**Password:** `dev`
 
 ## Preview
 Login
