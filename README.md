@@ -84,4 +84,4 @@ Open Virtual Box > Select File > Import Appliance... > Select UbuntuDevMachine.o
 - TLDR
 
 ### Special Thanks
-[@felsiq](https://github.com/felsiq), [@josuegrace05](https://github.com/felsiq), [@ET33](https://github.com/felsiq), [@rhobernardi](https://github.com/felsiq), [@matheushjs](https://github.com/felsiq)
+[@felsiq](https://github.com/felsiq), [@josuegrace05](https://github.com/josuegrace05), [@ET33](https://github.com/ET33), [@rhobernardi](https://github.com/rhobernardi), [@matheushjs](https://github.com/matheushjs)
