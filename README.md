@@ -23,11 +23,11 @@ Download: http://tiny.cc/devMachine
 ## Preview
 Login
 
-<img src="https://github.com/BrunoxD/devMachine/blob/master/login.png" width="90%" height="90%"/>
+<img src="https://github.com/BrunoxD/devMachine/blob/master/preview/login.png" width="90%" height="90%"/>
 
 Desktop
 
-<img src="https://github.com/BrunoxD/devMachine/blob/master/desktop.png" width="90%" height="90%"/>
+<img src="https://github.com/BrunoxD/devMachine/blob/master/preview/desktop.png" width="90%" height="90%"/>
 
 ## Installed Softwares
 
