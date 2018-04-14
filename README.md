@@ -29,7 +29,7 @@ Desktop
 
 <img src="https://github.com/BrunoxD/devMachine/blob/master/preview/desktop.png" width="90%" height="90%"/>
 
-## Installed Softwares
+## [Installed Softwares](https://github.com/BrunoxD/devMachine/blob/master/UbuntuDevMachine.md)
 
 ### System
 - Ubuntu Essential Libraries
