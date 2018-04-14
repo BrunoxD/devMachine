@@ -2,7 +2,7 @@
 This is a project of a Virtual Machine (VM) for software development.
 
 ### Specifications
-The VM is based on Ubuntu 18.04 LTS (Bionic Beaver) Minimal instalation and Virtual Box. 
+The VM is based on [Ubuntu 18.04 LTS (Bionic Beaver) Minimal](http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot/mini.iso) instalation and Virtual Box. 
 
 ### Justificative
 The puporse of made this VM is to use in PCs that the user don't have administrador rights, but it provides a VM software to use.
