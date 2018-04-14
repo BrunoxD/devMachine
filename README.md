@@ -5,7 +5,7 @@ This is a project of a Virtual Machine (VM) for software development.
 The VM is based on [Ubuntu 18.04 LTS (Bionic Beaver) Minimal](http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot) instalation and [Oracle VM Virtual Box](https://www.virtualbox.org/). 
 
 ### Justificative
-The purpose of this VM is to use in computers where the user doesn't have admin rights, but it provides a VM software to use.
+The purpose of this VM is to use in computers where the user doesn't have admin rights, but which provides a VM software to use.
 
 ### Goals
 - Lightweight
@@ -55,9 +55,9 @@ Desktop
 - Htop
 - Git
 - Gitk
+- 7-Zip
 - Npm
 - TLDR
-- 7-Zip
 
 ### C Development
 - Valgrind
@@ -74,12 +74,15 @@ Desktop
   - Pandas
   - ImageIO
 
-### Mathematics
+### Mathematical Programming
 - R
 - Octave
 
 ### SGBD
 - PostgreeSQL
+
+### Container
+- Docker
 
 ### Source Code Editor
 - Sublime Text
@@ -90,9 +93,8 @@ Desktop
 - Stacer
 - File-Roller
 - Terminator
-- Franz
-- Docker 
-- Firefox
+- Franz 
+- Firefox Quantum
   - Bookmarks
     - Sharelatex
     - GitHub
