@@ -98,11 +98,14 @@ https://www.gnome-look.org/p/1000019/
 
 ## Container  
 ### [Docker](https://linuxconfig.org/how-to-install-docker-on-ubuntu-18-04-bionic-beaver)  
-1.`sudo apt-get install \  
+1.
+```
+sudo apt-get install \  
 apt-transport-https \  
 ca-certificates \  
 curl \  
-software-properties-common`  
+software-properties-common   
+```  
 2.`curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`  
 3.`sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"`  
 4.`sudo apt-get update`  
@@ -131,7 +134,7 @@ software-properties-common`
 ### File-Roller  
 `sudo apt-get install file-roller`  
 ### Terminator  
-``sudo apt-get install terminator`  
+`sudo apt-get install terminator`  
 ### Franz  
 1.`wget https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.15/franz_5.0.0-beta.15_amd64.deb -O franz.deb`  
 2.`sudo apt-get install libx11-dev libxext-dev libxss-dev libxkbfile-dev`  
