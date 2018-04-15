@@ -4,6 +4,8 @@ This is a project of a Virtual Machine (VM) for software development.
 ### Specifications
 The VM is based on [Ubuntu 18.04 LTS (Bionic Beaver) Minimal](http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot) instalation and [Oracle VM Virtual Box](https://www.virtualbox.org/). 
 
+<img src="https://github.com/BrunoxD/devMachine/blob/master/preview/specifications.png" width="75%" height="75%"/>
+
 ### Justificative
 The purpose of this VM is to use in computers where the user doesn't have admin rights, but which provides a VM software to use.
 
@@ -37,14 +39,18 @@ Desktop
   - ubuntu-restricted-extras
   - libavcodec-extra
 - APP Repository
+- Synaptic
 
 ### Customization
 - XFCE4
+- Whisker Menu
 - XDM
 - Slim
 - Bash Theme
 - Plymouth
 - Plymouth Themes
+- Adapta GTK Theme
+- Arc-Flatabulous Theme
 
 ### Terminal Tools
 - Curl
@@ -91,6 +97,8 @@ Desktop
 
 ### Graphical Tools
 - Stacer
+- BleachBit
+- GNOME Calculator
 - File-Roller
 - Terminator
 - Franz 
