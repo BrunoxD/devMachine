@@ -5,6 +5,9 @@
 `sudo apt-get install ubuntu-restricted-extras`  
 `sudo apt-get install libavcodec-extra`  
 
+### Synaptic
+`sudo apt-get install synaptic`
+
 ### APP Repository  
 `sudo apt-get install software-properties-common python-software-properties`  
 
@@ -15,6 +18,8 @@
 ## Customization  
 ### XFCE4  
 `sudo apt-get install xfce4`
+### [Whisker Menu](https://www.vivaolinux.com.br/dica/Configurando-o-Whisker-Menu-no-XFCE4)
+`sudo apt-get install xfce4-whiskermenu-plugin`
 ### XDM  
 `sudo apt-get install xdm`
 ### Slim  
@@ -36,6 +41,15 @@ https://www.gnome-look.org/p/1111249/
 https://www.gnome-look.org/p/1000019/  
 `sudo update-alternatives --config default.plymouth`  
 `sudo update-initramfs -u`  
+### Adapta GTK Theme
+1.`sudo apt-add-repository ppa:tista/adapta`  
+2.`sudo apt-get install adapta-gtk-theme`
+### [Arc-Flatabulous Theme](https://github.com/andreisergiu98/arc-flatabulous-theme)
+1.`git clone https://github.com/andreisergiu98/arc-flatabulous-theme --depth 1 && cd arc-flatabulous-theme`  
+2.`sudo apt-get install libgtk-3-dev`  
+3.`sudo apt-get install sassc`  
+4.`./autogen.sh --prefix=/usr`  
+5.`sudo make install`  
 
 ## Terminal Tools  
 ### Curl  
@@ -130,6 +144,10 @@ software-properties-common
 1.`sudo add-apt-repository ppa:oguzhaninan/stacer`  
 2.`sudo apt-get update`  
 3.`sudo apt-get install stacer`  
+### BleachBit
+`sudo apt-get install bleachbit`
+### GNOME Calculator
+`sudo apt-get install gnome-calculator`
 ### File-Roller  
 `sudo apt-get install file-roller`  
 ### Terminator  
