@@ -6,7 +6,7 @@ The VM is based on [Ubuntu 18.04 LTS (Bionic Beaver) Minimal](http://archive.ubu
 
 <img src="https://github.com/BrunoxD/devMachine/blob/master/preview/specifications.png" width="75%" height="75%"/>
 
-### Justificative
+### Purpose
 The purpose of this VM is to use in computers where the user doesn't have admin rights, but which provides a VM software to use.
 
 ### Goals
@@ -123,7 +123,7 @@ Desktop
 - VLC
 
 ### Contributing
-Lightweight usefull softwares tips and suggestions are welcome!
+Lightweight useful softwares tips and suggestions are welcome!
 
 ## License
 [GPL-3.0](https://github.com/BrunoxD/devMachine/blob/master/LICENSE) 
