@@ -33,7 +33,7 @@ Desktop
 
 ## [Installed Softwares](https://github.com/BrunoxD/devMachine/blob/master/UbuntuDevMachine.md)
 
-### System
+### System Utils
 - Ubuntu Essential Libraries
   - net-tools
   - ubuntu-restricted-extras
