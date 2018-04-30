@@ -41,6 +41,9 @@ https://www.gnome-look.org/p/1111249/
 https://www.gnome-look.org/p/1000019/  
 `sudo update-alternatives --config default.plymouth`  
 `sudo update-initramfs -u`  
+`sudo su`  
+`echo -e "GRUB_GFXPAYLOAD_LINUX=keep\nGRUB_GFXMODE=\"800x600x32\"" >> /etc/default/grub`  
+`update grub`  
 ### Adapta GTK Theme
 1.`sudo apt-add-repository ppa:tista/adapta`  
 2.`sudo apt-get install adapta-gtk-theme`
@@ -84,6 +87,9 @@ https://www.gnome-look.org/p/1000019/
 ## Python Development  
 ### Python Pip 3  
 `sudo apt-get install python3-pip`  
+### Jupyter Notebook
+`sudo pip3 install jupyter`  
+`sudo apt-get install ipython3`
 ### Python Libraries  
   ### TkInter  
   `sudo apt-get install python3-tk`
