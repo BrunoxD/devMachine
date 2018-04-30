@@ -71,6 +71,7 @@ Desktop
 
 ### Python Development
 - Python Pip 3
+- Jupyter Notebook
 - Python Libraries
   - TkInter
   - NumPy
@@ -111,6 +112,7 @@ Desktop
     - Google Drive
     - Dropbox
     - 4Devs
+    - Draw.io
 
 ### Multimedia
 - Nomacs
