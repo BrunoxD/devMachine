@@ -4,7 +4,7 @@ This is a project of a Virtual Machine (VM) for software development.
 ### Specifications
 The VM is based on [Ubuntu 18.04 LTS (Bionic Beaver) Minimal](http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot) instalation and [Oracle VM Virtual Box](https://www.virtualbox.org/). 
 
-<img src="https://github.com/BrunoxD/devMachine/blob/master/preview/specifications.png" width="75%" height="75%"/>
+<img src="/preview/specifications.png" width="75%" height="75%"/>
 
 ### Motive
 The purpose of this VM is to use in computers where the user doesn't have admin rights, but which provides a VM software to use.
@@ -25,13 +25,13 @@ Download: http://tiny.cc/devMachine
 ## Preview
 Login
 
-<img src="https://github.com/BrunoxD/devMachine/blob/master/preview/login.png" width="90%" height="90%"/>
+<img src="/preview/login.png" width="90%" height="90%"/>
 
 Desktop
 
-<img src="https://github.com/BrunoxD/devMachine/blob/master/preview/desktop.png" width="90%" height="90%"/>
+<img src="/preview/desktop.png" width="90%" height="90%"/>
 
-## [Installed Softwares](https://github.com/BrunoxD/devMachine/blob/master/UbuntuDevMachine.md)
+## [Installed Softwares](/UbuntuDevMachine.md)
 
 ### System Utils
 - Ubuntu Essential Libraries
@@ -80,6 +80,7 @@ Desktop
   - SciPy
   - Pandas
   - ImageIO
+  - OpenGL  
 
 ### Mathematical Programming
 - R
@@ -90,6 +91,7 @@ Desktop
 
 ### Container
 - Docker
+- Docker-compose  
 
 ### Source Code Editor
 - Sublime Text
@@ -123,12 +125,13 @@ Desktop
 - Evince
 - ffmpeg
 - VLC
+- GLUT  
 
 ### Contributing
 Lightweight useful softwares tips and suggestions are welcome!
 
 ## License
-[GPL-3.0](https://github.com/BrunoxD/devMachine/blob/master/LICENSE) 
+[GPL-3.0](/LICENSE) 
 
 ## Special Thanks
 [@felsiq](https://github.com/felsiq), [@guilhermeht](https://github.com/guilhermeht), [@josuegrace05](https://github.com/josuegrace05), [@ET33](https://github.com/ET33), [@rhobernardi](https://github.com/rhobernardi), [@matheushjs](https://github.com/matheushjs)

@@ -105,6 +105,8 @@ https://www.gnome-look.org/p/1000019/
   `sudo apt-get install python3-pandas`
   ### ImageIO  
   `sudo apt-get install python3-imageio`
+  ### OpenGL
+  `sudo apt-get install python3-opengl`
 
 ## Mathematical Programming  
 ### R  
@@ -130,6 +132,10 @@ software-properties-common
 4.`sudo apt-get update`  
 5.`sudo apt-get install docker.io`  
 6.`sudo docker run hello-world`  
+
+### [Docker-compose](https://docs.docker.com/compose/install/#install-compose)
+`sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose`  
+`sudo chmod +x /usr/local/bin/docker-compose`
 
 ## Source Code Editor  
 ### [Sublime Text](https://www.sublimetext.com/docs/3/linux_repositories.html####apt)
@@ -190,3 +196,5 @@ software-properties-common
 `sudo apt-get install ffmpeg`  
 ### VLC  
 `sudo apt-get install vlc`  
+### GLUT
+`sudo apt-get install freeglut3-dev`
