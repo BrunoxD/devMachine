@@ -80,6 +80,7 @@ Desktop
   - SciPy
   - Pandas
   - ImageIO
+  - OpenGL  
 
 ### Mathematical Programming
 - R
@@ -90,6 +91,7 @@ Desktop
 
 ### Container
 - Docker
+- Docker-compose  
 
 ### Source Code Editor
 - Sublime Text
@@ -123,6 +125,7 @@ Desktop
 - Evince
 - ffmpeg
 - VLC
+- GLUT  
 
 ### Contributing
 Lightweight useful softwares tips and suggestions are welcome!
