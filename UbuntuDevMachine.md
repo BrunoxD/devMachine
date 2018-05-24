@@ -133,7 +133,7 @@ software-properties-common
 5.`sudo apt-get install docker.io`  
 6.`sudo docker run hello-world`  
 
-### [Docker-compose] (https://docs.docker.com/compose/install/#install-compose)
+### [Docker-compose](https://docs.docker.com/compose/install/#install-compose)
 `sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose`  
 `sudo chmod +x /usr/local/bin/docker-compose`
 
