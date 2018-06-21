@@ -116,7 +116,7 @@ https://www.gnome-look.org/p/1000019/
 
 ## Data Base Management System   
 ### PostgreeSQL  
-`sudo apt-get install postgreesql postgreesql-contrib`  
+`sudo apt-get install postgresql postgresql-contrib`  
 
 ## Container  
 ### [Docker](https://linuxconfig.org/how-to-install-docker-on-ubuntu-18-04-bionic-beaver)  
