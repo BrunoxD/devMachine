@@ -31,20 +31,22 @@ Desktop
 
 <img src="/preview/desktop.png" width="90%" height="90%"/>
 
-## [Installed Softwares](/UbuntuDevMachine.md)
+## [Installed Softwares](https://github.com/BrunoxD/devMachine/blob/master/UbuntuDevMachine.md)
 
 ### System Utils
 - Ubuntu Essential Libraries
   - net-tools
   - ubuntu-restricted-extras
   - libavcodec-extra
-- APP Repository
 - Synaptic
+- APP Repository
+- Headers
+- GNOME Terminal
 
 ### Customization
 - XFCE4
+- XFCE Panel Switch
 - Whisker Menu
-- XDM
 - Slim
 - Bash Theme
 - Plymouth
@@ -62,12 +64,15 @@ Desktop
 - Git
 - Gitk
 - 7-Zip
-- Npm
+- NPM
 - TLDR
+- Yarn
 
 ### C Development
 - Valgrind
 - GDB
+- Qt5
+- FreeGlut
 
 ### Python Development
 - Python Pip 3
@@ -80,7 +85,22 @@ Desktop
   - SciPy
   - Pandas
   - ImageIO
-  - OpenGL  
+  - OpenGL
+  - rstr
+  - Regex
+  - Faker
+  - Beautiful Soup
+  - SpaCy
+  - Bokeh
+  - Scikit-learn
+  - TensorFlow
+  - StatsModels
+  - Seaborn
+  - Plotly
+  - Pydot
+  - Theano
+  - Keras
+  - Scrapy
 
 ### Mathematical Programming
 - R
@@ -88,13 +108,18 @@ Desktop
 
 ### Data Base Management System 
 - PostgreeSQL
+- Driver Qt5
 
 ### Container
 - Docker
-- Docker-compose  
+- Docker Compose
 
 ### Source Code Editor
 - Sublime Text
+  - Packages
+    - GitGutter
+    - GraphQL
+    - Rainglow
 - Vim
 - VSCode 
 
@@ -103,6 +128,11 @@ Desktop
 - BleachBit
 - GNOME Calculator
 - File-Roller
+- GtkHash
+- FileZilla
+- Transmission
+- ScreenShooter
+- Kazam
 - Terminator
 - Franz 
 - Firefox Quantum
@@ -115,17 +145,23 @@ Desktop
     - Dropbox
     - 4Devs
     - Draw.io
+    - Kaggle
+    - Google Tradutor
+  - Add-ons
+    - uBlock Origin
+    - Video DownloadHelper
 
 ### Multimedia
+- OpenShot
 - Nomacs
 - Gimp
 - Inkscape
 - MyPaint
 - Audacity
 - Evince
+- Master PDF Editor
 - ffmpeg
 - VLC
-- GLUT  
 
 ### Contributing
 Lightweight useful softwares tips and suggestions are welcome!
@@ -134,4 +170,4 @@ Lightweight useful softwares tips and suggestions are welcome!
 [GPL-3.0](/LICENSE) 
 
 ## Special Thanks
-[@felsiq](https://github.com/felsiq), [@guilhermeht](https://github.com/guilhermeht), [@josuegrace05](https://github.com/josuegrace05), [@ET33](https://github.com/ET33), [@rhobernardi](https://github.com/rhobernardi), [@matheushjs](https://github.com/matheushjs)
+[@felsiq](https://github.com/felsiq), [@guilhermeht](https://github.com/guilhermeht), [@josuegrace05](https://github.com/josuegrace05), [@ET33](https://github.com/ET33), [@rhobernardi](https://github.com/rhobernardi), [@matheushjs](https://github.com/matheushjs), [@JonReyz](https://github.com/JonReyz), [@andremsouza](https://github.com/andremsouza)
