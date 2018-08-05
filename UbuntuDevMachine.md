@@ -30,7 +30,7 @@
 ## Customization  
 ### [XFCE4](https://superuser.com/questions/887430/xfce-login-error-unable-to-load-failsafe-session)
 1.`sudo apt install xfce4`  
-2.`export XDG_CONFIG_DIRS=/etc/xdg`
+2.`export XDG_CONFIG_DIRS=/etc/xdg`  
 3.`sudo chown -R $USER $HOME`
 
 ### XFCE Panel Switch
@@ -41,7 +41,7 @@
 
 ### [Slim](http://ubuntuhandbook.org/index.php/2013/08/install-use-slim-login-manager-in-ubuntu/)
 `sudo apt install slim`  
-`cp -r slim-themes/ubuntu /usr/share/slim/themes/`
+`cp -r slim-themes/ubuntu /usr/share/slim/themes/`  
 `sudo nano /etc/slim.conf`  
 https://github.com/DirectorX/slim-void-theme/releases  
 
