@@ -1,4 +1,8 @@
-# Ubuntu Developer Machine
+# Ubuntu Developer Machine 
+[![Release](https://img.shields.io/badge/release-v2.0-blue.svg)](http://tiny.cc/devMachine)
+![Last Update](https://img.shields.io/badge/last%20update-2018--08--04-yellowgreen.svg)
+![Status](https://img.shields.io/badge/status-Update%20in%20Progress-red.svg) 
+[![GitHub license](https://img.shields.io/badge/license-GPL--3.0-orange.svg)](/LICENSE)  
 This is a project of a Virtual Machine (VM) for software development.
 
 ### Specifications
@@ -165,9 +169,6 @@ Desktop
 
 ### Contributing
 Lightweight useful softwares tips and suggestions are welcome!
-
-## License
-[GPL-3.0](/LICENSE) 
 
 ## Special Thanks
 [@felsiq](https://github.com/felsiq), [@guilhermeht](https://github.com/guilhermeht), [@josuegrace05](https://github.com/josuegrace05), [@ET33](https://github.com/ET33), [@rhobernardi](https://github.com/rhobernardi), [@matheushjs](https://github.com/matheushjs), [@JonReyz](https://github.com/JonReyz), [@andremsouza](https://github.com/andremsouza)
