@@ -19,7 +19,7 @@ The purpose of this VM is to use in computers where the user doesn't have admin 
 - Fast
 
 ## Installation
-Download: http://tiny.cc/devMachine  
+[![Download](https://img.shields.io/badge/Download-http%3A%2F%2Ftiny.cc%2FdevMachine-blue.svg)](http://tiny.cc/devMachine)  
 `Open Virtual Box` > `Select File` > `Import Appliance...` > `Select UbuntuDevMachine.ova` > `Next` > `Import`
 
 ### Login
