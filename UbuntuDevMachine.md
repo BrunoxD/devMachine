@@ -119,8 +119,8 @@ https://www.gnome-look.org/p/1000019/
 ### Python Pip 3  
 `sudo apt install python3-pip`  
 ### Jupyter Notebook
-`sudo pip3 install -U jupyter`  
-`sudo apt install ipython3`
+`sudo apt install ipython3`  
+`sudo apt install jupyter`  
 ### Python Libraries  
   ### TkInter  
   `sudo apt install python3-tk`
@@ -145,13 +145,13 @@ https://www.gnome-look.org/p/1000019/
   ### Faker
   `sudo pip3 install -U Faker`
   ### Beautiful Soup
-  `sudo pip3 install -U beautifulsoup4`
+  `sudo apt install python3-bs4`
   ### SpaCy
   `sudo pip3 install -U spacy`
   ### Bokeh
   `sudo pip3 install -U bokeh`
   ### Scikit-learn
-  `sudo pip3 install -U scikit-learn`
+  `sudo apt install python3-sklearn`
   ### TensorFlow
   `sudo pip3 install -U tensorflow`
   ### StatsModels
@@ -197,8 +197,8 @@ software-properties-common
 6.`sudo docker run hello-world`  
 
 ### [Docker Compose](https://github.com/docker/compose/releases)
-1`sudo curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose`  
-2`sudo chmod +x /usr/local/bin/docker-compose`
+1.`sudo curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose`  
+2.`sudo chmod +x /usr/local/bin/docker-compose`
 
 ## Source Code Editor  
 ### [Sublime Text](https://www.sublimetext.com/docs/3/linux_repositories.html####apt)
@@ -242,7 +242,7 @@ software-properties-common
 ### Transmission
 `sudo apt install transmission`
 ### ScreenShooter
-`sudo apt install screenshooter`
+`sudo apt install xfce4-screenshooter`
 ### Kazam
 `sudo apt install kazam`
 ### Terminator  
@@ -250,6 +250,8 @@ software-properties-common
 ### Franz  
 1.`wget https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.18/franz_5.0.0-beta.18_amd64.deb -O franz.deb`  
 2.`sudo apt install libx11-dev libxext-dev libxss-dev libxkbfile-dev`  
+3.`sudo dpkg -i franz.deb`  
+4.`sudo apt-get --fix-broken install`  
 ### Firefox Quantum  
 `sudo apt install firefox`
 #### Bookmarks  
@@ -293,6 +295,7 @@ software-properties-common
 `sudo apt install evince`  
 ### Master PDF Editor
 1.`wget https://code-industry.net/public/master-pdf-editor-5.1.12_qt5.amd64.deb -O master-pdf-editor.deb`  
+2.`sudo dpkg -i master-pdf-editor.deb`
 3.`sudo apt-get --fix-broken install`  
 ### ffmpeg  
 `sudo apt install ffmpeg`  
