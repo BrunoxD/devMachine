@@ -292,8 +292,7 @@ software-properties-common
 ### Evince  
 `sudo apt install evince`  
 ### Master PDF Editor
-1.`wget https://code-industry.net/public/master-pdf-editor-5.0.36_qt5.amd64.deb -O master-pdf-editor.deb`  
-2.`sudo dpkg -i master-pdf-editor.deb`  
+1.`wget https://code-industry.net/public/master-pdf-editor-5.1.12_qt5.amd64.deb -O master-pdf-editor.deb`  
 3.`sudo apt-get --fix-broken install`  
 ### ffmpeg  
 `sudo apt install ffmpeg`  
