@@ -197,7 +197,7 @@ software-properties-common
 6.`sudo docker run hello-world`  
 
 ### [Docker Compose](https://github.com/docker/compose/releases)
-1`curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose`  
+1`curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose`  
 2`chmod +x /usr/local/bin/docker-compose`
 
 ## Source Code Editor  
@@ -208,6 +208,7 @@ software-properties-common
 4.`sudo apt update`  
 5.`sudo apt install sublime-text`  
 #### Packages
+  - Git
   - GitGutter
   - GraphQL
   - Rainglow
