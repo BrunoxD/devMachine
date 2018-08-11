@@ -143,17 +143,17 @@ https://www.gnome-look.org/p/1000019/
   ### Regex
   `sudo apt install python3-regex`
   ### Faker
-  `sudo pip3 install -U Faker`
+  `sudo -H pip3 install -U Faker`
   ### Beautiful Soup
   `sudo apt install python3-bs4`
   ### SpaCy
-  `sudo pip3 install -U spacy`
+  `sudo -H pip3 install -U spacy`
   ### Bokeh
-  `sudo pip3 install -U bokeh`
+  `sudo -H pip3 install -U bokeh`
   ### Scikit-learn
   `sudo apt install python3-sklearn`
   ### TensorFlow
-  `sudo pip3 install -U tensorflow`
+  `sudo -H pip3 install -U tensorflow`
   ### StatsModels
   `sudo apt install python3-statsmodels`
   ### Seaborn
