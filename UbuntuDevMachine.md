@@ -29,9 +29,7 @@
 
 ## Customization  
 ### [XFCE4](https://superuser.com/questions/887430/xfce-login-error-unable-to-load-failsafe-session)
-1.`sudo apt install xfce4`  
-2.`export XDG_CONFIG_DIRS=/etc/xdg`  
-3.`sudo chown -R $USER $HOME`
+`sudo apt install xfce4`  
 
 ### XFCE Panel Switch
 `sudo apt install xfpanel-switch`
@@ -41,7 +39,7 @@
 
 ### [Slim](http://ubuntuhandbook.org/index.php/2013/08/install-use-slim-login-manager-in-ubuntu/)
 `sudo apt install slim`  
-`cp -r slim-themes/ubuntu /usr/share/slim/themes/`  
+`sudo cp -r slim-themes/ubuntu /usr/share/slim/themes/`  
 `sudo nano /etc/slim.conf`  
 https://github.com/DirectorX/slim-void-theme/releases  
 
@@ -100,9 +98,7 @@ https://www.gnome-look.org/p/1000019/
 1.`curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -`  
 2.`sudo apt install -y nodejs`  
 ### TLDR  
-1.`sudo npm install -g tldr`  
-2.`cd /usr/lib/node_modules/tldr/node_modules/`  
-3.`sudo npm install webworker-threads/`  
+`sudo npm install -g tldr`    
 ### [Yarn](https://yarnpkg.com/en/docs/install#debian-stable)
 1.`curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -`  
 2.`echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/  sources.list.d/yarn.list`  
@@ -181,7 +177,7 @@ https://www.gnome-look.org/p/1000019/
 
 ## Data Base Management System   
 ### PostgreeSQL  
-`sudo apt install postgreesql postgreesql-contrib` 
+`sudo apt install postgresql postgresql-contrib` 
 ### Driver Qt5
 `sudo apt install libqt5sql5-psql`
 
