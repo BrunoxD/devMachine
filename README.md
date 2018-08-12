@@ -1,7 +1,7 @@
 # Ubuntu Developer Machine 
-[![Release](https://img.shields.io/badge/release-v2.0-blue.svg)](http://tiny.cc/devMachine)
-[![Last Update](https://img.shields.io/badge/last%20update-2018--08--04-yellowgreen.svg)](http://tiny.cc/devMachine)
-[![Status](https://img.shields.io/badge/status-Up%20to%20Date-brightgreen.svg)](http://tiny.cc/devMachine)
+[![Release](https://img.shields.io/badge/release-v3.0-blue.svg)](http://tiny.cc/devMachine)
+[![Last Update](https://img.shields.io/badge/last%20update-2018--08--11-yellowgreen.svg)](http://tiny.cc/devMachine)
+[![Status](https://img.shields.io/badge/status-Upload%20in%20Progress-red.svg)](http://tiny.cc/devMachine)
 [![GitHub license](https://img.shields.io/badge/license-GPL--3.0-orange.svg)](/LICENSE)  
 This is a project of a Virtual Machine (VM) for software development.
 
@@ -20,7 +20,7 @@ The purpose of this VM is to use in computers where the user doesn't have admin 
 
 ## Installation
 [![Download](https://img.shields.io/badge/Download-http%3A%2F%2Ftiny.cc%2FdevMachine-blue.svg)](http://tiny.cc/devMachine)  
-`Open Virtual Box` > `Select File` > `Import Appliance...` > `Select UbuntuDevMachine.ova` > `Next` > `Import`
+`Open Virtual Box` > `Select File` > `Import Appliance...` > `Select DevMachine.ova` > `Next` > `Import`
 
 ### Login
 **Username:**`dev`  
@@ -121,6 +121,7 @@ Desktop
 ### Source Code Editor
 - Sublime Text
   - Packages
+    - Git
     - GitGutter
     - GraphQL
     - Rainglow
