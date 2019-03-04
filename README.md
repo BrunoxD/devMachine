@@ -1,10 +1,10 @@
 # Ubuntu Developer Machine 
 [![Release](https://img.shields.io/badge/release-v3.0-blue.svg)](http://tiny.cc/devMachine)
 [![Last Update](https://img.shields.io/badge/last%20update-2018--08--12-yellowgreen.svg)](http://tiny.cc/devMachine)
-<!---[![Status](https://img.shields.io/badge/status-Up%20to%20Date-brightgreen.svg)](http://tiny.cc/devMachine)-->
 [![Status](https://img.shields.io/badge/status-Update%20on%20progress-critical.svg)](http://tiny.cc/devMachine)
 [![GitHub license](https://img.shields.io/badge/license-GPL--3.0-orange.svg)](/LICENSE)  
 This is a project of a Virtual Machine (VM) for software development.
+<!---[![Status](https://img.shields.io/badge/status-Up%20to%20Date-brightgreen.svg)](http://tiny.cc/devMachine)-->
 
 ### Specifications
 The VM is based on [Ubuntu 18.04.2 LTS (Bionic Beaver) Minimal](http://archive.ubuntu.com/ubuntu/dists/bionic-updates/main/installer-amd64/current/images/netboot/) instalation and [Oracle VM Virtual Box](https://www.virtualbox.org/). 
@@ -120,7 +120,7 @@ Desktop
 - Docker Compose
 
 ### Source Code Editor
-- Sublime Text
+- Sublime Text 3
   - Packages
     - Git
     - GitGutter
