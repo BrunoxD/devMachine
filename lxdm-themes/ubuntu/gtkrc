@@ -17,13 +17,13 @@ style "back"
 style "time"
 {
 	fg[NORMAL]="#ffffff"
-	font_name="Sans 12"
+	font_name="Verdana 11"
 }
 
 style "prompt"
 {
 	fg[NORMAL]="#ffffff"
-	font_name="Sans Bold 14"
+	font_name="Verdana Bold 12"
 }
 
 widget "lxdm" style "back"
