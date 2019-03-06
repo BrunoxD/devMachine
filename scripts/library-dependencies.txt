@@ -1,0 +1,20 @@
+# scipy & numpy
+# http://scipy.github.io/devdocs/building/linux.html
+libopenblas-dev
+liblapack-dev
+
+# matplotlib
+# https://matplotlib.org/users/installing.html#dependencies
+libfreetype6-dev
+libpng-dev
+pkg-config
+
+# keras
+# https://github.com/NVIDIA/DIGITS/issues/156#issuecomment-436808513
+libhdf5-serial-dev
+
+# scrapy
+# https://stackoverflow.com/questions/31508612/pip-install-unable-to-find-ffi-h-even-though-it-recognizes-libffi
+libffi-dev
+libxml2-dev
+libxmlsec1-dev
