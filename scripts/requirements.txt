@@ -13,7 +13,7 @@ rstr
 regex
 Faker
 bs4
-spacy
+#spacy
 statsmodels
 plotly
 pydot

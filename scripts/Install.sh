@@ -8,7 +8,8 @@ buildDeps='build-essential gcc gfortran python3.6-dev'
 apt-get update \
     && apt-get install -y $buildDeps --no-install-recommends \
     && cat /tmp/library-dependencies.txt | egrep "^[^#].*$" | xargs apt-get install -y \
-    && CFLAGS="-Os -g0 -Wl,--strip-all -I/usr/include:/usr/local/include -L/usr/lib:/usr/local/lib" \
+    && sudo -H python3 -m pip install --upgrade pip \
+    && CFLAGS="-g0 -Wl,--strip-all -I/usr/include:/usr/local/include -L/usr/lib:/usr/local/lib" \
     && 
     for lib in `cat /tmp/requirements.txt | egrep "^[^#].*$"`
 		do
@@ -20,6 +21,7 @@ apt-get update \
 			    --upgrade \
 				$lib 
 		done \
+	&& sudo -H python3 -m pip install --upgrade tensorflow \
     && rm -r \
         /tmp/requirements.txt \
         /tmp/library-dependencies.txt

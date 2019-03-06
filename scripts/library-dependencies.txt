@@ -1,3 +1,6 @@
+# python3-pip
+python3-pip
+
 # scipy & numpy
 # http://scipy.github.io/devdocs/building/linux.html
 libopenblas-dev
