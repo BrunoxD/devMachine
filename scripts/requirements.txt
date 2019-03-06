@@ -23,4 +23,5 @@ pillow
 bokeh
 imageio
 scrapy
-#tensorflow
+#tensorflow - sudo -H pip3 install -U tensorflow
+#jupyter - sudo -H pip3 install -U jupyter
