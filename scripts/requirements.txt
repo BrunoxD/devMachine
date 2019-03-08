@@ -13,7 +13,7 @@ rstr
 regex
 Faker
 bs4
-# spacy
+#spacy - Too heavy
 statsmodels
 plotly
 pydot
@@ -23,5 +23,5 @@ pillow
 bokeh
 imageio
 scrapy
+#jupyter - Add pip param -I in Install.sh and execute with this.
 #tensorflow - sudo -H pip3 install -U tensorflow
-#jupyter - sudo -H pip3 install -U jupyter
