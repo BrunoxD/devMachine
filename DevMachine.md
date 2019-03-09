@@ -1,9 +1,11 @@
 # Softwares Install  
 ## System Utils  
 ### Ubuntu Essential Libraries  
-`sudo apt install net-tools`  
-`sudo apt install ubuntu-restricted-extras`  
-`sudo apt install libavcodec-extra`  
+```
+sudo apt install net-tools \
+ubuntu-restricted-extras \
+libavcodec-extra
+```
 
 ### Synaptic
 `sudo apt install synaptic`
@@ -12,14 +14,20 @@
 `sudo apt install software-properties-common`  
 
 ### Headers
-`sudo apt install linux-headers-$(uname -r) build-essential dkms`
+```
+sudo apt install linux-headers-$(uname -r) \
+build-essential \
+dkms
+```
 
 ### GNOME Terminal
 `sudo apt install gnome-terminal`  
 
 ### Reset Repositories
-`sudo rm /etc/apt/sources.list`  
-`sudo software-properties-gtk`  
+```
+sudo rm /etc/apt/sources.list \  
+&& sudo software-properties-gtk
+```
 
 ### Path Configuration
 `echo -e "\nsource /etc/environment\n" >> .bashrc`
@@ -29,7 +37,11 @@
 
 ## Customization  
 ### [XFCE4](https://superuser.com/questions/887430/xfce-login-error-unable-to-load-failsafe-session)
-`sudo apt install xfce4`  
+```
+sudo apt install xfce4 \
+&& export XDG_CONFIG_DIRS=/etc/xdg \
+&& sudo chown -R $USER $HOME
+```
 
 ### XFCE Panel Switch
 `sudo apt install xfpanel-switch`
@@ -63,19 +75,32 @@ https://www.gnome-look.org/p/1000019/
 `update grub`  
 
 ### Adapta GTK Theme
-1.`sudo apt-add-repository ppa:tista/adapta`  
-2.`sudo apt install adapta-gtk-theme`
+```
+sudo apt-add-repository ppa:tista/adapta \
+&& sudo apt install adapta-gtk-theme
+```
 
 ### [Arc-Flatabulous Theme](https://github.com/andreisergiu98/arc-flatabulous-theme)
-1.`git clone https://github.com/andreisergiu98/arc-flatabulous-theme --depth 1 && cd arc-flatabulous-theme`  
-2.`sudo apt install libgtk-3-dev`  
-3.`sudo apt install sassc`  
-4.`./autogen.sh --prefix=/usr`  
-5.`sudo make install`  
+```
+git clone https://github.com/andreisergiu98/arc-flatabulous-theme --depth 1 \
+&& cd arc-flatabulous-theme \  
+&& sudo apt install autoconf \
+automake \
+sassc \
+pkg-config \
+git \
+optipng \
+inkscape \
+libgtk-3-dev \  
+&& ./autogen.sh --prefix=/usr \
+&& sudo make install
+```
 
 ## Terminal Tools  
 ### Curl  
 `sudo apt install curl`
+### Baobab  
+`sudo apt install baobab`
 ### Zerofree  
 `sudo apt install zerofree`
 ### Screenfetch  
@@ -95,15 +120,18 @@ https://www.gnome-look.org/p/1000019/
 ### 7-Zip  
 `sudo apt install p7zip-full`
 ### NPM  
-1.`curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -`  
-2.`sudo apt install -y nodejs`  
+```
+curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash - \
+&& sudo apt install -y nodejs
+```
 ### TLDR  
 `sudo npm install -g tldr`    
 ### [Yarn](https://yarnpkg.com/en/docs/install#debian-stable)
-1.`curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -`  
-2.`echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/  sources.list.d/yarn.list`  
-3.`sudo apt update && sudo apt install yarn`  
-4.`yarn --version`  
+```
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - \  
+&& echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list \  
+&& sudo apt update && sudo apt install yarn
+```
 
 ## C/C++ Development  
 ### Valgrind  
@@ -115,59 +143,23 @@ https://www.gnome-look.org/p/1000019/
 ### FreeGLUT 
 `sudo apt install freeglut3-dev`
   
-## Python Development  
+## Python 3 Development  
 ### Python Pip 3  
-`sudo apt install python3-pip`  
-### Jupyter Notebook
-`sudo apt install ipython3`  
-`sudo apt install jupyter`  
+```
+sudo apt install python3-pip \
+&& sudo -H pip3 install -U pip
+```
 ### Python Libraries  
-  ### TkInter  
-  `sudo apt install python3-tk`
-  ### NumPy  
-  `sudo apt install python3-numpy`
-  ### Matplotlib  
-  `sudo apt install python3-matplotlib`
-  ### NLTK  
-  `sudo apt install python3-nltk`
-  ### SciPy  
-  `sudo apt install python3-scipy`
-  ### Pandas  
-  `sudo apt install python3-pandas`
-  ### ImageIO  
-  `sudo apt install python3-imageio`  
-  ### OpenGL
-  `sudo apt install python3-opengl`  
-  ### rstr
-  `sudo apt install python3-rstr`
-  ### Regex
-  `sudo apt install python3-regex`
-  ### Faker
-  `sudo -H pip3 install -U Faker`
-  ### Beautiful Soup
-  `sudo apt install python3-bs4`
-  ### SpaCy
-  `sudo -H pip3 install -U spacy`
-  ### Bokeh
-  `sudo -H pip3 install -U bokeh`
-  ### Scikit-learn
-  `sudo apt install python3-sklearn`
-  ### TensorFlow
-  `sudo -H pip3 install -U tensorflow`
-  ### StatsModels
-  `sudo apt install python3-statsmodels`
-  ### Seaborn
-  `sudo apt install python3-seaborn`
-  ### Plotly
-  `sudo apt install python3-plotly`
-  ### Pydot
-  `sudo apt install python3-pydot`
-  ### Theano
-  `sudo apt install python3-theano`
-  ### Keras
-  `sudo apt install python3-keras`
-  ### Scrapy
-  `sudo apt install python3-scrapy`
+### NumPy, Matplotlib, NLTK, SciPy, Pandas, ImageIO, OpenGL, rstr, Regex, Faker, Beautiful Soup, SpaCy, Bokeh, Scikit-learn, StatsModels, Seaborn, Plotly, Pydot, Theano, Keras, Scrapy, Jupyter Notebook
+```
+git clone https://github.com/BrunoxD/devMachine \
+&& cd devMachine/scripts/ \
+&& sudo ./Install.sh
+```
+### TkInter  
+`sudo apt install python3-tk`
+### TensorFlow
+`sudo -H pip3 install -U tensorflow`
 
 ## Mathematical Programming  
 ### R  
@@ -177,7 +169,10 @@ https://www.gnome-look.org/p/1000019/
 
 ## Data Base Management System   
 ### PostgreeSQL  
-`sudo apt install postgresql postgresql-contrib` 
+```
+sudo apt install postgresql \
+postgresql-contrib
+```
 ### Driver Qt5
 `sudo apt install libqt5sql5-psql`
 
@@ -189,24 +184,28 @@ apt-transport-https \
 ca-certificates \
 curl \
 software-properties-common
+&& curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - \  
+&& sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" \  
+&& sudo apt update \
+&& sudo apt install docker-ce \
+&& sudo docker run hello-world`  
 ```  
-2.`curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`  
-3.`sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"`  
-4.`sudo apt update`  
-5.`sudo apt install docker-ce`  
-6.`sudo docker run hello-world`  
 
 ### [Docker Compose](https://github.com/docker/compose/releases)
-1.`sudo curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose`  
-2.`sudo chmod +x /usr/local/bin/docker-compose`
+```
+sudo curl -L https://github.com/docker/compose/releases/download/1.24.0-rc1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose \
+&& sudo chmod +x /usr/local/bin/docker-compose
+```
 
 ## Source Code Editor  
 ### [Sublime Text](https://www.sublimetext.com/docs/3/linux_repositories.html####apt)
-1.`wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -`  
-2.`sudo apt install apt-transport-https`  
-3.`echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list`  
-4.`sudo apt update`  
-5.`sudo apt install sublime-text`  
+```
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - \
+&& sudo apt install apt-transport-https \
+&& echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list \
+&& sudo apt update \
+&& sudo apt install sublime-text
+```
 #### Packages
   - Git
   - GitGutter
@@ -217,24 +216,30 @@ software-properties-common
 `sudo apt install vim`  
 
 ### [VSCode](https://code.visualstudio.com/docs/setup/linux) 
-1.`curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg`  
-2.`sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg`  
-3.`sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'`  
-4.`sudo apt update`  
-5.`sudo apt install code`  
+```
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg \
+&& sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg \
+&& sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list' \
+&& sudo apt update \
+&& sudo apt install code
+```
 
 ## Graphical Tools
 ### Stacer  
-1.`sudo add-apt-repository ppa:oguzhaninan/stacer`  
-2.`sudo apt update`  
-3.`sudo apt install stacer`  
+```
+sudo add-apt-repository ppa:oguzhaninan/stacer \
+sudo apt update \
+sudo apt install stacer
+```
 ### BleachBit
 `sudo apt install bleachbit`
 ### GNOME Calculator
 `sudo apt install gnome-calculator`
 ### File-Roller  
-`sudo apt install file-roller`  
-`sudo apt install thunar-archive-plugin`  
+```
+sudo apt install file-roller \
+thunar-archive-plugin
+```
 ### GtkHash
 `sudo apt install thunar-gtkhash`  
 ### FileZilla
@@ -248,14 +253,22 @@ software-properties-common
 ### Terminator  
 `sudo apt install terminator`  
 ### Franz  
-1.`wget https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.18/franz_5.0.0-beta.18_amd64.deb -O franz.deb`  
-2.`sudo apt install libx11-dev libxext-dev libxss-dev libxkbfile-dev`  
-3.`sudo dpkg -i franz.deb`  
-4.`sudo apt-get --fix-broken install`  
+```
+wget https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.18/franz_5.0.0-beta.18_amd64.deb -O franz.deb \
+&& sudo apt install libx11-dev libxext-dev libxss-dev libxkbfile-dev \
+&& sudo dpkg -i franz.deb \
+&& sudo apt-get --fix-broken install
+```
+### Station
+```
+wget "https://dl.getstation.com/download/linux_64?filetype=AppImage" -O station.appimage \
+&& chmod +x station.appimage \
+&& sudo ./station.appimage
+```
 ### Firefox Quantum  
 `sudo apt install firefox`
 #### Bookmarks  
-  - Sharelatex  
+  - Overleaf  
   - GitHub  
   - Google Docs  
   - Trello  
@@ -264,7 +277,8 @@ software-properties-common
   - 4Devs  
   - Draw.io
   - Kaggle
-  - Google Tradutor
+  - Google Colaboratory
+  - Google Translator
 
 #### Add-ons
   - uBlock Origin
@@ -278,9 +292,11 @@ software-properties-common
 
 ## Multimedia
 ### [OpenShot](https://www.openshot.org/pt/ppa/)
-1.`sudo add-apt-repository ppa:openshot.developers/ppa`  
-2.`sudo apt update`  
-3.`sudo apt install openshot-qt -y`  
+```
+sudo add-apt-repository ppa:openshot.developers/ppa \
+&& sudo apt update \
+&& sudo apt install openshot-qt -y
+```
 ### Nomacs  
 `sudo apt install nomacs`  
 ### Gimp  
@@ -294,9 +310,11 @@ software-properties-common
 ### Evince  
 `sudo apt install evince`  
 ### Master PDF Editor
-1.`wget https://code-industry.net/public/master-pdf-editor-5.1.12_qt5.amd64.deb -O master-pdf-editor.deb`  
-2.`sudo dpkg -i master-pdf-editor.deb`  
-3.`sudo apt-get --fix-broken install`  
+```
+wget https://code-industry.net/public/master-pdf-editor-5.3.20_qt5.amd64.deb -O master-pdf-editor.deb \
+&& sudo dpkg -i master-pdf-editor.deb \
+&& sudo apt-get --fix-broken install \
+```
 ### ffmpeg  
 `sudo apt install ffmpeg`  
 ### VLC  
