@@ -1,6 +1,6 @@
 # Ubuntu Developer Machine 
-[![Release](https://img.shields.io/badge/release-v3.0-blue.svg)](http://tiny.cc/devMachine)
-[![Last Update](https://img.shields.io/badge/last%20update-2018--08--12-yellowgreen.svg)](http://tiny.cc/devMachine)
+[![Release](https://img.shields.io/badge/release-v4.0-blue.svg)](http://tiny.cc/devMachine)
+[![Last Update](https://img.shields.io/badge/last%20update-2019--03--16-yellowgreen.svg)](http://tiny.cc/devMachine)
 [![Status](https://img.shields.io/badge/status-Update%20on%20progress-critical.svg)](http://tiny.cc/devMachine)
 [![GitHub license](https://img.shields.io/badge/license-GPL--3.0-orange.svg)](/LICENSE)  
 This is a project of a Virtual Machine (VM) for software development.
@@ -73,13 +73,13 @@ Desktop
 - TLDR
 - Yarn
 
-### C Development
+### C/C++ Development
 - Valgrind
 - GDB
 - Qt5
 - FreeGlut
 
-### Python Development
+### Python 3 Development
 - Python Pip 3
 - Jupyter Notebook
 - Python Libraries
@@ -169,6 +169,7 @@ Desktop
 - Master PDF Editor
 - ffmpeg
 - VLC
+- MPV
 
 ### Contributing
 Lightweight useful softwares tips and suggestions are welcome!
