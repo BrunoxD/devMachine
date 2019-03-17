@@ -50,9 +50,12 @@ sudo apt install xfce4 \
 `sudo apt install xfce4-whiskermenu-plugin`
 
 ### [Slim](http://ubuntuhandbook.org/index.php/2013/08/install-use-slim-login-manager-in-ubuntu/)
-`sudo apt install slim`  
-`sudo cp -r slim-themes/ubuntu /usr/share/slim/themes/`  
-`sudo nano /etc/slim.conf`  
+```
+sudo apt install slim -y \
+&& sudo cp -r devMachine/slim-themes/ubuntu /usr/share/slim/themes/ \
+&& sudo sed -i 's/debian-softwaves/ubuntu/g' /etc/slim.conf \
+&& sudo sed -i "4i Conflicts=getty@tty1.service" /lib/systemd/system/slim.service
+```
 https://github.com/DirectorX/slim-void-theme/releases  
 
 ### Bash Theme  
@@ -62,6 +65,11 @@ https://github.com/DirectorX/slim-void-theme/releases
 `sudo apt install plymouth`
 
 ### Plymouth Themes  
+```
+sudo apt install plymouth-theme-ubuntu-logo -y \
+&& echo FRAMEBUFFER=y | sudo tee /etc/initramfs-tools/conf.d/splash \
+&& sudo update-initramfs -u
+```
 https://www.youtube.com/watch?v=YRuqn2sliqA  
 https://www.gnome-look.org/p/1111515/  
 https://www.gnome-look.org/p/1009736/  
@@ -99,8 +107,6 @@ libgtk-3-dev \
 ## Terminal Tools  
 ### Curl  
 `sudo apt install curl`
-### Baobab  
-`sudo apt install baobab`
 ### Zerofree  
 `sudo apt install zerofree`
 ### Screenfetch  
@@ -228,9 +234,11 @@ curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microso
 ### Stacer  
 ```
 sudo add-apt-repository ppa:oguzhaninan/stacer \
-sudo apt update \
-sudo apt install stacer
+&& sudo apt update \
+&& sudo apt install stacer
 ```
+### Baobab  
+`sudo apt install baobab`
 ### BleachBit
 `sudo apt install bleachbit`
 ### GNOME Calculator
@@ -252,19 +260,6 @@ thunar-archive-plugin
 `sudo apt install kazam`
 ### Terminator  
 `sudo apt install terminator`  
-### Franz  
-```
-wget https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.18/franz_5.0.0-beta.18_amd64.deb -O franz.deb \
-&& sudo apt install libx11-dev libxext-dev libxss-dev libxkbfile-dev \
-&& sudo dpkg -i franz.deb \
-&& sudo apt-get --fix-broken install
-```
-### Station
-```
-wget "https://dl.getstation.com/download/linux_64?filetype=AppImage" -O station.appimage \
-&& chmod +x station.appimage \
-&& sudo ./station.appimage
-```
 ### Firefox Quantum  
 `sudo apt install firefox`
 #### Bookmarks  
@@ -311,11 +306,19 @@ sudo add-apt-repository ppa:openshot.developers/ppa \
 `sudo apt install evince`  
 ### Master PDF Editor
 ```
-wget https://code-industry.net/public/master-pdf-editor-5.3.20_qt5.amd64.deb -O master-pdf-editor.deb \
+wget https://code-industry.net/public/master-pdf-editor-5.3.22_qt5.amd64.deb -O master-pdf-editor.deb \
 && sudo dpkg -i master-pdf-editor.deb \
-&& sudo apt-get --fix-broken install \
+&& sudo apt install libsane1 -y
 ```
 ### ffmpeg  
 `sudo apt install ffmpeg`  
 ### VLC  
 `sudo apt install vlc`  
+### MPV
+`sudo apt install mpv`
+
+### Fix for VLC and OpenShot in VirtualBox 6.0.4
+```
+sudo apt install patchelf \
+&& sudo patchelf --add-needed libcrypt.so.1 /opt/VBoxGuestAdditions-6.0.4/lib/VBoxOGLcrutil.so
+```
