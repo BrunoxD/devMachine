@@ -8,17 +8,24 @@ buildDeps='build-essential gcc gfortran python3-dev'
 apt-get update \
     && apt-get install -y $buildDeps --no-install-recommends \
     && cat /tmp/library-dependencies.txt | egrep "^[^#].*$" | xargs apt-get install -y \
-    && 
+    &&
     for lib in `cat ./requirements.txt | egrep "^[^#].*$"`
 		do
-			echo $lib > /tmp/requirements.txt \
-			&& cat /tmp/requirements.txt \
+			echo $lib > /tmp/requirements.txt
+
+			FLAG=""
+			if [ "$lib" == "jupyter" ]; then
+				FLAG="-I"
+			fi
+
+			cat /tmp/requirements.txt \
 			&& CFLAGS="-Os -g0 -Wl,--strip-all -I/usr/include:/usr/local/include -L/usr/lib:/usr/local/lib" /usr/local/bin/pip install \
 			    --no-cache-dir \
 			    --compile \
 			    --global-option=build_ext \
 			    --global-option="-j 4" \
 			    --upgrade \
+			    $FLAG \
 				-r /tmp/requirements.txt
 		done \
     && rm -r \
