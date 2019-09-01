@@ -89,7 +89,7 @@ INSTALL+="htop "
 ### Git  
 PRE_INSTALL+="git "
 #### Reset Git Configuration
-GIT_RESET='sudo bash -c "echo \"rm -rf ~/.gitconfig\" >> /etc/profile '
+GIT_RESET='sudo bash -c "echo \"rm -rf ~/.gitconfig\" >> /etc/profile" '
 ### Gitk  
 INSTALL+="gitk "
 ### 7-Zip  
@@ -262,6 +262,9 @@ INSTALL+="vlc "
 
 #echo "$KERNEL&& $INSTALL&& $SUDOERS&& $GIT_RESET"
 echo "$SUDOERS"
+echo ""
 echo "$KERNEL"
+echo ""
 echo "$PRE_INSTALL"
+echo ""
 echo "$PPA&& $INSTALL&& $CONFIG&& $GIT_RESET&& $PIP"
