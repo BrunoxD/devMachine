@@ -23,5 +23,6 @@ pillow
 bokeh
 imageio
 scrapy
-#jupyter - Add pip param -I in Install.sh and execute with this.
+# Add pip param -I in Install.sh and execute with this.
+jupyter
 #tensorflow - sudo -H pip3 install -U tensorflow
