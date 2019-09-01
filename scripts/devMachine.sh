@@ -70,9 +70,8 @@ INSTALL+="pkg-config "
 INSTALL+="optipng "
 INSTALL+="inkscape "
 INSTALL+="libgtk-3-dev "
-CONFIG+="&& ./autogen.sh --prefix=/usr --with-gtk3=3.22.30 --with-gnome-shell=3.28.2 "
+CONFIG+="&& ./autogen.sh --prefix=/usr --with-gnome-shell=3.28.2 "
 CONFIG+="&& sudo make install "
-
 
 ## Terminal Tools  
 ### Curl  
@@ -104,6 +103,10 @@ CONFIG+="&& sudo npm install -g tldr "
 CONFIG+="&& curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - "
 CONFIG+='&& echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list '
 CONFIG+="&& sudo apt update && sudo apt install yarn "
+### [Pandoc](https://gist.github.com/rain1024/98dd5e2c6c8c28f9ea9d)
+INSTALL+="texlive-latex-base "
+INSTALL+="texlive-fonts-recommended "
+INSTALL+="pandoc "
 
 ## C/C++ Development  
 ### Valgrind  
@@ -154,7 +157,7 @@ CONFIG+="&& sudo apt update "
 CONFIG+="&& sudo apt install docker-ce -y " 
 
 ### [Docker Compose](https://github.com/docker/compose/releases)
-CONFIG+="&& sudo curl -L https://github.com/docker/compose/releases/download/1.24.0-rc1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose "
+CONFIG+="&& sudo curl -L https://github.com/docker/compose/releases/download/1.25.0-rc2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose "
 CONFIG+="&& sudo chmod +x /usr/local/bin/docker-compose "
 
 ## Source Code Editor  
@@ -181,6 +184,13 @@ CONFIG+="&& sudo apt update "
 CONFIG+="&& sudo apt install code "
 
 ## Graphical Tools
+### Insomnia
+CONFIG+='&& echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" '
+CONFIG+='| sudo tee -a /etc/apt/sources.list.d/insomnia.list '
+CONFIG+='&& wget -qO - https://insomnia.rest/keys/debian-public.key.asc '
+CONFIG+='| sudo apt-key add - '
+CONFIG+='&& sudo apt-get update '
+CONFIG+='&& sudo apt-get install insomnia -y'
 ### Stacer  
 PPA+="&& sudo add-apt-repository ppa:oguzhaninan/stacer -y "
 INSTALL+="&& sudo apt install stacer "
@@ -254,14 +264,7 @@ CONFIG+="&& sudo apt install libsane1 -y "
 INSTALL+="ffmpeg "
 ### VLC  
 INSTALL+="vlc "
-### MPV
-#`sudo apt install mpv`
 
-### Fix for VLC and OpenShot in VirtualBox 6.0.4
-#sudo apt install patchelf \
-#&& sudo patchelf --add-needed libcrypt.so.1 /opt/VBoxGuestAdditions-6.0.4/lib/VBoxOGLcrutil.so
-
-#echo "$KERNEL&& $INSTALL&& $SUDOERS&& $GIT_RESET"
 echo "$SUDOERS"
 echo ""
 echo "$KERNEL"

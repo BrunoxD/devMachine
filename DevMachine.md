@@ -1,5 +1,12 @@
 # Softwares Install  
 ## System Utils  
+### Kernel Update 5.0
+```
+sudo apt install --install-recommends \
+linux-generic-hwe-18.04 \
+xserver-xorg-hwe-18.04
+```
+
 ### Ubuntu Essential Libraries  
 ```
 sudo apt install net-tools \
@@ -25,7 +32,7 @@ dkms
 
 ### Reset Repositories
 ```
-sudo rm /etc/apt/sources.list \  
+sudo rm /etc/apt/sources.list \
 && sudo software-properties-gtk
 ```
 
@@ -59,7 +66,7 @@ sudo apt install slim -y \
 https://github.com/DirectorX/slim-void-theme/releases  
 
 ### Bash Theme  
-`wget http://tiny.cc/terminal -O .bashrc`
+`wget http://tiny.cc/bash -O .bashrc`
 
 ### Plymouth  
 `sudo apt install plymouth`
@@ -91,7 +98,7 @@ sudo apt-add-repository ppa:tista/adapta \
 ### [Arc-Flatabulous Theme](https://github.com/andreisergiu98/arc-flatabulous-theme)
 ```
 git clone https://github.com/andreisergiu98/arc-flatabulous-theme --depth 1 \
-&& cd arc-flatabulous-theme \  
+&& cd arc-flatabulous-theme \
 && sudo apt install autoconf \
 automake \
 sassc \
@@ -99,7 +106,7 @@ pkg-config \
 git \
 optipng \
 inkscape \
-libgtk-3-dev \  
+libgtk-3-dev \
 && ./autogen.sh --prefix=/usr \
 && sudo make install
 ```
@@ -127,16 +134,22 @@ libgtk-3-dev \
 `sudo apt install p7zip-full`
 ### NPM  
 ```
-curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash - \
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - \
 && sudo apt install -y nodejs
 ```
 ### TLDR  
 `sudo npm install -g tldr`    
 ### [Yarn](https://yarnpkg.com/en/docs/install#debian-stable)
 ```
-curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - \  
-&& echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list \  
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - \
+&& echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list \
 && sudo apt update && sudo apt install yarn
+```
+### [Pandoc](https://gist.github.com/rain1024/98dd5e2c6c8c28f9ea9d)
+```
+sudo apt install -y texlive-latex-base \
+texlive-fonts-recommended \
+pandoc
 ```
 
 ## C/C++ Development  
@@ -189,17 +202,17 @@ sudo apt install \
 apt-transport-https \
 ca-certificates \
 curl \
-software-properties-common
-&& curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - \  
-&& sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" \  
+software-properties-common \
+&& curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - \
+&& sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" \
 && sudo apt update \
 && sudo apt install docker-ce \
-&& sudo docker run hello-world`  
+&& sudo docker run hello-world`
 ```  
 
 ### [Docker Compose](https://github.com/docker/compose/releases)
 ```
-sudo curl -L https://github.com/docker/compose/releases/download/1.24.0-rc1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose \
+sudo curl -L https://github.com/docker/compose/releases/download/1.25.0-rc2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose \
 && sudo chmod +x /usr/local/bin/docker-compose
 ```
 
@@ -229,8 +242,21 @@ curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microso
 && sudo apt update \
 && sudo apt install code
 ```
+#### Packages
+  - Monokai Pro  
+  - Python  
 
 ## Graphical Tools
+### Insomnia
+```
+echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" \
+    | sudo tee -a /etc/apt/sources.list.d/insomnia.list \
+&& wget -qO - https://insomnia.rest/keys/debian-public.key.asc \
+    | sudo apt-key add - \
+&& sudo apt-get update \
+&& sudo apt-get install insomnia -y
+```
+
 ### Stacer  
 ```
 sudo add-apt-repository ppa:oguzhaninan/stacer \
@@ -306,19 +332,10 @@ sudo add-apt-repository ppa:openshot.developers/ppa \
 `sudo apt install evince`  
 ### Master PDF Editor
 ```
-wget https://code-industry.net/public/master-pdf-editor-5.3.22_qt5.amd64.deb -O master-pdf-editor.deb \
-&& sudo dpkg -i master-pdf-editor.deb \
-&& sudo apt install libsane1 -y
+wget https://code-industry.net/public/master-pdf-editor-5.4.38-qt5.amd64.deb -O master-pdf-editor.deb \
+&& sudo apt install libsane1 ./master-pdf-editor.deb -y
 ```
 ### ffmpeg  
 `sudo apt install ffmpeg`  
 ### VLC  
 `sudo apt install vlc`  
-### MPV
-`sudo apt install mpv`
-
-### Fix for VLC and OpenShot in VirtualBox 6.0.4
-```
-sudo apt install patchelf \
-&& sudo patchelf --add-needed libcrypt.so.1 /opt/VBoxGuestAdditions-6.0.4/lib/VBoxOGLcrutil.so
-```
