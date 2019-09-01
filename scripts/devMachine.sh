@@ -37,7 +37,7 @@ PRE_INSTALL+="gnome-terminal "
 #`echo -e "\nsource /etc/environment\n" >> .bashrc`
 
 ### Sudoers Configuration
-SUDOERS='sudo bash -c "echo \"$USER ALL=(ALL) NOPASSWD: ALL\" >> /etc/sudoers '
+SUDOERS='sudo bash -c "echo \"$USER ALL=(ALL) NOPASSWD: ALL\" >> /etc/sudoers" '
 
 ## Customization  
 INSTALL+="xfce4 "
@@ -69,13 +69,13 @@ INSTALL+="sassc "
 INSTALL+="pkg-config "
 INSTALL+="optipng "
 INSTALL+="inkscape "
-CONFIG+="&& autogen.sh --prefix=/usr --with-gtk3=3.22.30 --with-gnome-shell=3.28.2 "
+CONFIG+="&& ./autogen.sh --prefix=/usr --with-gtk3=3.22.30 --with-gnome-shell=3.28.2 "
 CONFIG+="&& sudo make install "
 
 
 ## Terminal Tools  
 ### Curl  
-INSTALL+="curl "
+PRE_INSTALL+="curl "
 ### Zerofree  
 INSTALL+="zerofree "
 ### Screenfetch  
@@ -117,7 +117,7 @@ INSTALL+="freeglut3-dev "
 ## Python 3 Development  
 ### Python Pip 3  
 INSTALL+="python3-pip "
-PIP="sudo -H pip3 install -U pip "
+PIP="sudo -H pip3 install -U pip -y "
 ### Python Libraries  
 ### NumPy, Matplotlib, NLTK, SciPy, Pandas, ImageIO, OpenGL, rstr, Regex, Faker, Beautiful Soup, SpaCy, Bokeh, Scikit-learn, StatsModels, Seaborn, Plotly, Pydot, Theano, Keras, Scrapy, Jupyter Notebook
 #git clone https://github.com/BrunoxD/devMachine \
@@ -150,7 +150,7 @@ INSTALL+="software-properties-common "
 CONFIG+="&& curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - "
 CONFIG+='&& sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" -y '
 CONFIG+="&& sudo apt update "
-CONFIG+="&& sudo apt install docker-ce " 
+CONFIG+="&& sudo apt install docker-ce -y " 
 
 ### [Docker Compose](https://github.com/docker/compose/releases)
 CONFIG+="&& sudo curl -L https://github.com/docker/compose/releases/download/1.24.0-rc1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose "
@@ -173,7 +173,7 @@ CONFIG+="&& sudo apt install sublime-text "
 INSTALL+="vim "
 
 ### [VSCode](https://code.visualstudio.com/docs/setup/linux) 
-CONFIG+="curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg "
+CONFIG+="&& curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg "
 CONFIG+="&& sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg "
 CONFIG+="&& sudo sh -c 'echo \"deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main\" > /etc/apt/sources.list.d/vscode.list' "
 CONFIG+="&& sudo apt update "
@@ -181,7 +181,7 @@ CONFIG+="&& sudo apt install code "
 
 ## Graphical Tools
 ### Stacer  
-PPA+="&& sudo add-apt-repository ppa:oguzhaninan/stacer "
+PPA+="&& sudo add-apt-repository ppa:oguzhaninan/stacer -y "
 INSTALL+="&& sudo apt install stacer "
 ### Baobab  
 INSTALL+="baobab "
@@ -231,9 +231,8 @@ INSTALL+="firefox "
 
 ## Multimedia
 ### [OpenShot](https://www.openshot.org/pt/ppa/)
-# sudo add-apt-repository ppa:openshot.developers/ppa \
-# && sudo apt update \
-# && sudo apt install openshot-qt -y
+PPA+="&& sudo add-apt-repository ppa:openshot.developers/ppa -y "
+INSTALL+="openshot-qt "
 ### Nomacs  
 INSTALL+="nomacs "
 ### Gimp  
@@ -247,9 +246,9 @@ INSTALL+="audacity "
 ### Evince  
 INSTALL+="evince "
 ### Master PDF Editor
-# wget https://code-industry.net/public/master-pdf-editor-5.3.22_qt5.amd64.deb -O master-pdf-editor.deb \
-# && sudo dpkg -i master-pdf-editor.deb \
-# && sudo apt install libsane1 -y
+CONFIG+="&& wget https://code-industry.net/public/master-pdf-editor-5.4.38-qt5.amd64.deb -O master-pdf-editor.deb "
+CONFIG+="&& sudo apt install ./master-pdf-editor.deb -f -y "
+CONFIG+="&& sudo apt install libsane1 -y "
 ### ffmpeg  
 INSTALL+="ffmpeg "
 ### VLC  
@@ -265,8 +264,4 @@ INSTALL+="vlc "
 echo "$SUDOERS"
 echo "$KERNEL"
 echo "$PRE_INSTALL"
-echo "$PPA"
-echo "$INSTALL"
-echo "$CONFIG"
-echo "$GIT_RESET"
-echo "$PIP"
+echo "$PPA&& $INSTALL&& $CONFIG&& $GIT_RESET&& $PIP"
