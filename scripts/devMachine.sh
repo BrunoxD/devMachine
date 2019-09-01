@@ -69,6 +69,7 @@ INSTALL+="sassc "
 INSTALL+="pkg-config "
 INSTALL+="optipng "
 INSTALL+="inkscape "
+INSTALL+="libgtk-3-dev "
 CONFIG+="&& ./autogen.sh --prefix=/usr --with-gtk3=3.22.30 --with-gnome-shell=3.28.2 "
 CONFIG+="&& sudo make install "
 
@@ -117,7 +118,7 @@ INSTALL+="freeglut3-dev "
 ## Python 3 Development  
 ### Python Pip 3  
 INSTALL+="python3-pip "
-PIP="sudo -H pip3 install -U pip -y "
+PIP="sudo -H pip3 install -U pip "
 ### Python Libraries  
 ### NumPy, Matplotlib, NLTK, SciPy, Pandas, ImageIO, OpenGL, rstr, Regex, Faker, Beautiful Soup, SpaCy, Bokeh, Scikit-learn, StatsModels, Seaborn, Plotly, Pydot, Theano, Keras, Scrapy, Jupyter Notebook
 #git clone https://github.com/BrunoxD/devMachine \
