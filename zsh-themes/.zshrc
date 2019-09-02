@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/bruno/.oh-my-zsh"
+export ZSH="/home/$USER/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -69,17 +69,16 @@ ZSH_THEME="b2"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  autojump
+  git  
   urltools
   bgnotify
   zsh-autosuggestions
-  zsh-syntax-highlighting
-  jovial
+  zsh-syntax-highlighting  
   autopep8
   osx
   aws
   catimg
+  colored-man-pages
   command-not-found
   common-aliases
   compleat

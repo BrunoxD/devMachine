@@ -30,6 +30,27 @@ dkms
 ### GNOME Terminal
 `sudo apt install gnome-terminal`  
 
+### ZSH + [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
+```
+sudo apt install zsh -y \
+&& sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" \
+&& chsh -s $(which zsh)
+```
+
+#### ZSH Path and Themes
+```
+cp -f devMachine/zsh-themes/.zshrc ~ \
+&& cp -f devMachine/zsh-themes/b2.zsh-theme ~/.oh-my-zsh/themes/
+```
+#### [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
+`git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+
+#### [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
+`git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+
+### Default Shell Bash
+`chsh -s $(which bash)`
+
 ### Reset Repositories
 ```
 sudo rm /etc/apt/sources.list \
